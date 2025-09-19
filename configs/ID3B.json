@@ -65,7 +65,7 @@
     "optional": false,
     "multiple": false,
     "section": "DataLocations",
-    "description": "The path corresponding to root to the raw BTR directory",
+    "description": "The full path corresponding to root to the raw BTR directory",
     "units": "",
     "placeholder": "/"
   },
@@ -79,6 +79,16 @@
     "units": "",
     "placeholder": "/"
   },  
+  {
+    "key": "data_location_raw",
+    "type": "string",
+    "optional": true,
+    "multiple": false,
+    "section": "DataLocations",
+    "description": "The full path to directory containing spec file and directories with detector images",
+    "units": "",
+    "placeholder": "/"
+  }, 
   {
     "key": "cesr_conditions",
     "type": "list_str",
@@ -266,45 +276,5 @@
     "description": "Heated print bed: Nozzle temperature in degrees Celsius",
     "units": "celsius",
     "placeholder": ""
-  },
-  {
-    "key": "nozzle_scan_speed",
-    "type": "float64",
-    "optional": true,
-    "multiple": false,
-    "section": "Experiment",
-    "description": "Heated print bed: Nozzle scan speed in mm/s",
-    "units": "mm/s",
-    "placeholder": ""
-  },
-  {
-    "key": "bed_scan_speed",
-    "type": "float64",
-    "optional": true,
-    "multiple": false,
-    "section": "Experiment",
-    "description": "Heated print bed: Bed scan speed in mm/s",
-    "units": "mm/s",
-    "placeholder": ""
-  },
-  {
-    "key": "print_speed",
-    "type": "float64",
-    "optional": true,
-    "multiple": false,
-    "section": "Experiment",
-    "description": "Heated print bed: Print speed in mm/s",
-    "units": "mm/s",
-    "placeholder": ""
-  },
-  {
-    "key": "roller_feed_rate",
-    "type": "float64",
-    "optional": true,
-    "multiple": false,
-    "section": "Experiment",
-    "description": "Heated print bed: Roller feed rate in mm/s",
-    "units": "mm/s",
-    "placeholder": ""  
   }    
 ]
